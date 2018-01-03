@@ -34,7 +34,7 @@
                 </executions>
             </plugin>
         </plugins>
-    </build-->
+    </build>
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
@@ -42,5 +42,5 @@
             <version>4.3.13.RELEASE</version>
             <type>jar</type>
         </dependency>
-    </dependencies>
+    </dependencies-->
 </project>

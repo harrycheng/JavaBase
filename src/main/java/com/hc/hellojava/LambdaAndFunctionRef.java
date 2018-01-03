@@ -7,7 +7,6 @@ package com.hc.hellojava;
 
 import java.util.Arrays;
 import java.util.Comparator;
-import static java.util.Comparator.comparing;
 import java.util.List;
 import java.util.function.Function;
 
@@ -51,7 +50,7 @@ class AplleWeightCompare implements Comparator<Apple>{
 
 public class LambdaAndFunctionRef {
     public static void main(String[] args){
-        List<Apple> inventory = Arrays.asList(new Apple("red", 10), new Apple("green", 11),new Apple("yellow", 12) );
+        List<Apple> inventory = Arrays.asList(new Apple("red", 10), new Apple("green", 11),new Apple("yellow", 12), new Apple("orange", 9) );
         
         // 1新建类
         inventory.sort(new AplleWeightCompare());
@@ -77,7 +76,7 @@ public class LambdaAndFunctionRef {
         //4.2
         inventory.sort(Comparator.comparing( Apple::getWeight));
         
-        //printApples(inventory, (Apple a) -> {  a.getWeight().toString() } );                
+        printApples(inventory, (o)-> "apple with " + o.getWeight() + " color :"+  o.getColor());                
        
     }
     
