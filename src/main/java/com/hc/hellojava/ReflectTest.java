@@ -23,5 +23,6 @@ public class ReflectTest {
     
     public ReflectTest(){
         System.out.println("Construct");
+
     }
 }
